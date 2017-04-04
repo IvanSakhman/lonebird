@@ -1,5 +1,6 @@
 extends /blocks/layout-default/layout-default
 include /blocks/welcome/welcome
+include /blocks/menu/menu
 include /blocks/imagination/imagination
 include /blocks/create/create
 include /blocks/portfolio/portfolio
@@ -9,6 +10,7 @@ block head
 	- var pageTitle = 'CSSSR Project Template';
 
 block content
+	+menu
 	+welcome
 	+imagination
 	+create
